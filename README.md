@@ -1,2 +1,2 @@
 # Notes
-This repository contains notes that are worth taking by everyone.
+This repository contains notes that I think are worth taking by everyone.
