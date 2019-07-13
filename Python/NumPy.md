@@ -16,6 +16,7 @@ scalar elements.
 | Syntax | Description|
 | --- | --- |
 | `np.shape` | Indicate the size of each dimension |
+| `np.reshape(m, n)` | Reshape a 1-d array to 2-d array |
 | `np.dtype` | Describe the *data type* of the array |
 | `np.array(list)` | Create a one-dimensional array from the input data |
 | `np.array(listoflist)` | Create a two-dimensional array from the input data |
