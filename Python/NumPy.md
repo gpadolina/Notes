@@ -27,9 +27,9 @@ scalar elements.
 | `np.arange()` | NumPy version of built-in Python *range* that returns an ndarray instead of a list |
 | `np.eye()` | Create a 2-d N x N identity matrix |
 | `.astype(np.type)` | Convert or casts an array from one dtype to another |
-| `arr[m:n]` or `arr[m1:m2, y1:y2]` | Create a slice from row m1 to m2 (exclusive) to column n1 to n2 (exclusive) |
+| `arr[m:n]` or `arr[m1:m2, n1:n2]` | Create a slice from row m1 to m2 (exclusive) to column n1 to n2 (exclusive) |
 | `.copy()` | Produce a copy of an array. If you want to make a change in an array such as `arr`, use `arr2 = arr.copy()`. If `arr2 = arr`, changes will be made to `arr` |
-| `arr[x, y]` or `arr[x][y]` | Select invididual elements at row `x` column `y` |
+| `arr[m, n]` or `arr[m][n]` | Select invididual elements at row `m` column `n` |
 
 ### Operations between Arrays and Scalars
 
