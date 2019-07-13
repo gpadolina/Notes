@@ -36,16 +36,16 @@ type function:
 | Syntax | Description |
 | --- | --- |
 | `list.append(x)` | Add an item to the end of the list. Equivalent to `a[len(a):] = [x]` |
-| `list.extend(iterable)` | Extend the list by appending all the items from the iterable. |
+| `list.extend(iterable)` | Extend the list by appending all the items from the iterable |
 | `list.insert(i, x)` | Insert an item at a given position. *i = index* |
-| `list.remove(x)` | Remove the first item from the list whose value is equal to x. |
-| `list.pop([i])` | Remove the item at the given position in the list and return it. |
-| `list.clear()` | Remove all items from the list. Equivalent to `del a[:]`. |
-| `list.index(x[, start[, end]])` | Return zero-based index in the list of the first tiem whose value is equal to x.|
-| `list.count(x)` | Return the number of times x appears in the list. |
-| `list.sort(key=None, reverse=False)` | Sort the items of the list in place. Also see *sorted().* |
-| `list.reverse()` | Reverse the elements of the list in place. |
-| `list.copy()` | Return a shallow copy of the list. |
+| `list.remove(x)` | Remove the first item from the list whose value is equal to x |
+| `list.pop([i])` | Remove the item at the given position in the list and return it |
+| `list.clear()` | Remove all items from the list. Equivalent to `del a[:]` |
+| `list.index(x[, start[, end]])` | Return zero-based index in the list of the first tiem whose value is equal to x |
+| `list.count(x)` | Return the number of times x appears in the list |
+| `list.sort(key=None, reverse=False)` | Sort the items of the list in place. Also see *sorted()* |
+| `list.reverse()` | Reverse the elements of the list in place |
+| `list.copy()` | Return a shallow copy of the list |
 
 ## Dictionary
 
