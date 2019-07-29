@@ -22,4 +22,19 @@ model.fit(X, y)
 In general, the boundary in Gaussian is quadratic.
 
 ## Multinomial Naive Bayes
+Its features are assumed to be generated from a simple multinomial distribution. Multinomial distribution describes the probability of
+observing counts among a number of categories, which makes it most appropriate for features that represent counts or count rates. Often
+used in text classification.
+```
+from sklearn.naive_bayes import MultinomialNB
+```
 
+## When to Use Naive Bayes
+  1. For very well-separated categories, when model complexity is less import
+  2. For very high-dimensional data, when model complexity is less important
+  
+Naive Bayes do not perform well as more complicated model but they have advantages:
+  1. They are extremely fast for both training and prediction
+  2. They provide straightforward probabilistic prediction
+  3. They are often very easily interpretable
+  4. They have very few tunable parameters
