@@ -17,3 +17,9 @@ model.support_vectors_
 ```
 
 ## Kernel SVM
+SVM becomes extremely powerful when combined with kernels. We can apply kernelized SVM by simply changing out linear kernel to a radial
+basis function (RBF).
+```
+model = SVC(kernel='rbf')
+model.fit(X, y)
+```
