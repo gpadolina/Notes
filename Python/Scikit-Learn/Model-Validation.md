@@ -5,7 +5,7 @@ Hold out some subset of the data from the training of the model and then use thi
 ```
 from sklearn.model_selection import train_test_split
 # split the data with 50% in each set
-Xtrain, Xtest, ytrain, ytest = train_test_split(X, y, random_state=0,
+X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=0,
                                                 train_size=0.5)
 ```
 ### Cross-validation
