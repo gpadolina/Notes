@@ -1,5 +1,3 @@
-# Introduction to Scikit-Learn
-
 ## Scikit-Learn's Estimator API
 
 ### Basics of the API
