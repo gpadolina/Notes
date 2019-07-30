@@ -38,3 +38,4 @@ Generate a new feature matrix consisting of all polynomial combinations of the f
 ### Gaussian basis functions
 
 ## Regularization
+A technique used in an attempt to solve the overfitting problem in statistical models.
