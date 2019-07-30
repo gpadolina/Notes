@@ -11,3 +11,21 @@ tree = DecisionTreeClassifier().fit(X, y)
 ```
 ### Overfitting
 Overfitting turns out to be a general property of decision trees as it is very easy to go too deep in the tree.
+
+## Random Forests
+Random forests is an ensemble of randomized decision trees. To find a better classification, multiple overfitting estimators can be combined
+and averaged, a method called bagging.
+```
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.tree import BaggingClassifier
+
+tree = DecisitionTreeClassifier()
+bag  = BaggingClassifier(tree, etc.)
+
+bag.fit(X, y)
+```
+For an optimized ensemble of randomized decision trees, implement:
+```
+from sklearn.ensemble import RandomForestClassifier
+model = RandomForestCLassifer()
+```
