@@ -29,3 +29,16 @@ For an optimized ensemble of randomized decision trees, implement:
 from sklearn.ensemble import RandomForestClassifier
 model = RandomForestCLassifer()
 ```
+By averaging random models, we end up with an overall model that is much closer about how the parameter space should be split.
+
+## Random Forest Regression
+Random forest can also be used in the case of regression - continuous rather than categorical variables. We can find the best-fit
+curve as follows:
+```
+from sklearn.ensemble import RandomForestRegressor
+forest = RandomForestRegressor()
+forest.fit()
+```
+
+#### Disadvantage of using random forests
+Random forests results are not easily interpretable.
