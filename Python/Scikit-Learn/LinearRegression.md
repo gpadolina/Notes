@@ -39,3 +39,15 @@ Generate a new feature matrix consisting of all polynomial combinations of the f
 
 ## Regularization
 A technique used in an attempt to solve the overfitting problem in statistical models.
+
+### Ridge regression (<img src="https://latex.codecogs.com/svg.latex?L_{2}" title="L_{2}" /> regularization)
+This is the most common form of regularization. It penalizes the sum of squares(2-norms) of the model coefficients.
+```
+from sklearn.linear_model import Ridge
+```
+### Lasso regularization (<img src="https://latex.codecogs.com/svg.latex?L_{1}" title="L_{1}" />)
+Lasso penalizes the fum of absolute values(1-norms) of regression coefficients. Conceptually similary to ridge ression but lasso
+preferentially sets model coefficients to exactly zero.
+```
+from sklearn.linear_model import Lasso
+```
