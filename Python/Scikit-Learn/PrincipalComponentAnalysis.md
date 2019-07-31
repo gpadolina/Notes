@@ -14,14 +14,14 @@ pca.explained_variance_
 ```
 ### PCA as dimensionality reduction
 Using PCA for dimensionality reduction involves zeroing out one or more of the smallest principal components, resulting in a
-lower-dimensional projection of the data that preserves the maximal data variance/
+lower-dimensional projection of the data that preserves the maximal data variance.
 ```
 pca = PCA(n_components=1)
 pca.fit(X)
 X_pca = pca.transform(X)
 ```
 PCA as dimensionality reduction removes the information along the least important principal axes, leaving only the components with the
-highest variance.
+highest variance. In other words, it reduces the number of features while maintaining the essential relationships between points.
 
 ### Choosing the number of components
 We can determine the number of components needed to describe the data by plotting the *cumulative explained variance*, which measures how
