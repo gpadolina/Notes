@@ -28,4 +28,5 @@ We can determine the number of components needed to describe the data by plottin
 well PCA preserves the contents of the data.
 
 #### Disadvantage
-It tends to be highly affected by outliers in the data.
+It tends to be highly affected by outliers in the data and it does not perform well when there are nonlinear relatationships within
+the data.
