@@ -29,3 +29,4 @@ from sklearn.cluster import SpectralClustering
 model = SpectralClustering()
 label = model.fit_predict(X)
 ```
+While simple and easy to understand, the nonprobabilistic nature of k-means and its use of simple distance-from-cluster-center to assign cluster membership leads to poor performance for many real-world situations.
