@@ -12,3 +12,10 @@ The steps in using the Scikit-Learn estimator API are as follows:
    a. For supervised learning, predict labels for unknown data using the `predict()` method.
    
    b. For unsupervised learning, transform or infer properties of the data using the `transform()` or `predict()` method.
+
+### Common machine learning problems
+* Classification
+* Regressional
+* Dimensionality reduction
+* Density estimation
+
