@@ -26,6 +26,7 @@ By convention, we `import matplotlib.pyplot as plt` and `import seaborn as sns`.
 
 ## Matrix Plots
 The data for matrix plots needs to be in matrix form.
+
 | Syntax | Description |
 | --- | --- |
 | `sns.heatmap()` | Plot a rectangular data as color-encoded matrix. Provides an easy magnitude comparison using color difference. |
