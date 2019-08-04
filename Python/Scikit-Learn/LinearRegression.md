@@ -9,7 +9,7 @@ y = ax + b
 from sklearn.model_selection import train_test_split
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.5, random_state=1)
-      # The test_size is the percentage of the data set you want allocated to the test data
+      # The test_size is the percentage of the data set you want for to the test data
       # The random_state is the number of random splits of that data
 ```
 Then we instantiate and fit the model
@@ -50,4 +50,17 @@ Lasso penalizes the fum of absolute values(1-norms) of regression coefficients. 
 preferentially sets model coefficients to exactly zero.
 ```
 from sklearn.linear_model import Lasso
+```
+
+
+## Metrics
+```
+from sklearn import metrics
+
+metrics.mean_absolute_error(y_test, predicts)         # Mean absolute error is the average error.
+metrics.mean_squared_error(y_test, predicts)          # Mean squared error punishes larger errors. 
+                                                        Much more useful than above.
+metrics.explained_variance_score(y_test, predicts)    # Proportion of the variance.
+np.sqrt(metrics.mean_squared_error(y_test, predicts)) # Square root of the mean squared error. 
+                                                        More popular than MSE.
 ```
