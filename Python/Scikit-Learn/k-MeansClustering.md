@@ -1,10 +1,10 @@
 Clustering algorithms are unsupervised machine learning models that seek to learn an optimal division or discrete labeling of groups of
 points from the properties of the data. The basis of k-means model are:
-  1. The "cluster center" is the arithmetic mean of the all the points belonging to the cluster.
-  2. Each point is closer to its own cluster center than to other cluster centers.
+  1. The "cluster centroid" is the arithmetic mean of the all the points belonging to the cluster.
+  2. Each point is closer to its own centroid than to other cluster centroids.
 ```
 from sklearn.cluster import KMeans
-kmeans = KMeans(n_cluster=2)
+kmeans = KMeans(n_cluster=2) # You may not know the right number of clusters to use at first.
 kmeans.fit(X)
 y_kmeans = kmeans.predict(X)
 ```
