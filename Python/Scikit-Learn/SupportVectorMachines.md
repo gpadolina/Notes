@@ -23,3 +23,19 @@ basis function (RBF).
 model = SVC(kernel='rbf')
 model.fit(X, y)
 ```
+
+## Optimal parameters
+Use grid search cross-validation to find the optimal parameters for SVM.
+```
+from sklearn.grid_search import GridSearchCV
+param_grid = {'C': [0.1, 1, 5, 10, 50, 100],          # C controls the margin hardness. High C provides high bias, low variance.
+              'gamma': [1, 0.1, 0.01, 0.005, 0.0005]} # Gamma controls the size of radial basis function
+grid = GridSearchCV(model, param_grid)
+```
+
+To get a better sense of our report:
+```
+from sklearn.metrics import classification_report, confusion_matrix
+print(classification_report(ytest, yfit))
+print(confusion_matrix(ytest, yfit))
+```
