@@ -3,7 +3,7 @@ fundamentally a dimensionality reduction algorithmm but it can also be useful as
 feature extraction and engineering, and much more.
 ```
 from sklearn.decomposition import PCA
-pca = PCA(n_components=2)
+pca = PCA(n_components=2) # Any number is ok but 2 and 3 are recommended for visualization
 pca.fit(X)
 ```
 PCA quantifies the relationship between x and y values by finding a list of the principal axes in the data rather than attempting to
@@ -18,7 +18,7 @@ lower-dimensional projection of the data that preserves the maximal data varianc
 ```
 pca = PCA(n_components=1)
 pca.fit(X)
-X_pca = pca.transform(X)
+X_pca = pca.transform(X) # This will be the same dimension as n_components
 ```
 PCA as dimensionality reduction removes the information along the least important principal axes, leaving only the components with the
 highest variance. In other words, it reduces the number of features while maintaining the essential relationships between points.
