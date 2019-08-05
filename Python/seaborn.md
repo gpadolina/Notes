@@ -13,17 +13,28 @@ By convention, we `import matplotlib.pyplot as plt` and `import seaborn as sns`.
 | `sns.pairplot(data)` | Plot pairwise relationships or every possible 2-way comparison in a dataset in a matrix |
 | `data = sns.load_dataset('data')` | Load a data set |
 
-## Categorical Plots
+## Categorical Data
+
+#### Scatter plots
+| Syntax | Description |
+| --- | --- |
+| `sns.stripplot(x, y, data=None)` | Plot a scatterplot with one variable as categorical | 
+| `sns.swarmplot(x, y, data=None)` | Similar to stripplot but the points are adjusted to avoid overlapping |
+
+#### Estimate plots
 | Syntax | Description |
 | --- | --- |
 | `sns.barplot(x, y, data=None)` | Treat `x` as categorical and `y` as numeric and show plot as rectangular bars |
 | `sns.countplot(x, data=None)` | Plot the counts of observations in each categorical variable |
 | `sns.pointplot(x, y, data=None)` | Plot confidence intervals using scatter plot |
+
+#### Distribution plots
+| Syntax | Description |
+| --- | --- |
 | `sns.boxplot(x, y, data=None)` | Plot distributions with respect to categories |
 | `sns.boxenplot(x, y, data=None)` | Plot an enhanced box plot for larger data sets |
 | `sns.violinplot(x, y, data=None)` | Plot a combination of boxplot and KDEs |
-| `sns.stripplot(x, y, data=None)` | Plot a scatterplot with one variable as categorical | 
-| `sns.swarmplot(x, y, data=None)` | Similar to stripplot but the points are adjusted to avoid overlapping |
+
 
 ## Matrix Plots
 The data for matrix plots needs to be in matrix form.
