@@ -46,16 +46,18 @@ The data for matrix plots needs to be in matrix form.
 
 ## Grid Plots
 
-### PairGrid
+#### PairGrid
 Specialized version of `sns.pairplot`.
 ```
 g = sns.PairGrid(data)
-g.add_legend()              # Add a legend to the graph
-g.map_diag(sns.distplot)    # Plot distribution plot along the diagonal
-g.map_offdiag(plt.scatter)  # Plot a scatter plot above and below the diagonal
-g.map_lower(sns.kdeplot)    # Plot KDE plots below the diagonal
-g.map_upper(plt.scatter)    # Plot a scatter plot above the diagonal
 ```
+| Syntax | Desciprtion |
+| --- | --- |
+| `g.add_legend()` | Add a legend to the graph |
+| `g.map_diag(sns.distplot)` | Plot distribution plot *along* the diagonal |
+| `g.map_offdiag(plt.scatter)` | Plot a scatter plot *above and below* the diagonal |
+| `g.map_lower(sns.kdeplot)` | Plot KDE plots *below* the diagonal |
+| `g.map_upper(plt.scatter)` | Plot a scatter plot *above* the diagonal |
 
 ### FacetGrid
 Kind of like PairGrid but separates the data in multiple plots.
