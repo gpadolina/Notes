@@ -1,5 +1,7 @@
 ## Seaborn
-Seaborn provides high-level commans to create a variety of plot types useful for statistical exploration and modelling. Seaborn plots can also be done using Matplotlib but seaborn is more convenient. By convention, we `import matplotlib.pyplot as plt` and `import seaborn as sns`.
+Seaborn provides high-level commans to create a variety of plot types useful for statistical exploration and modelling. Seaborn plots can also be done using Matplotlib but seaborn is more convenient. 
+
+By convention, we `import matplotlib.pyplot as plt` and `import seaborn as sns`.
 
 ## Distribution Plots
 | Syntax | Description |
