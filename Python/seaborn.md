@@ -26,7 +26,7 @@ By convention, we `import matplotlib.pyplot as plt` and `import seaborn as sns`.
 | --- | --- |
 | `sns.barplot(x, y, data=None)` | Treat `x` as categorical and `y` as numeric and show plot as rectangular bars |
 | `sns.countplot(x, data=None)` | Plot the counts of observations in each categorical variable |
-| `sns.pointplot(x, y, data=None)` | Plot confidence intervals using scatter plot |
+| `sns.pointplot(x, y, data=None)` | Plot confidence intervals using solid lines |
 
 #### Distribution plots
 | Syntax | Description |
