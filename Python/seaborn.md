@@ -1,16 +1,15 @@
 ## Seaborn
-By convention, we `import matplotlib.pyplot as plt` and `import seaborn as sns`.
+Seaborn provides high-level commans to create a variety of plot types useful for statistical exploration and modelling. Seaborn plots can also be done using Matplotlib but seaborn is more convenient. By convention, we `import matplotlib.pyplot as plt` and `import seaborn as sns`.
 
 ## Distribution Plots
 | Syntax | Description |
 | --- | --- |
-| `data = sns.load_dataset('name')` | Load a data set |
-| `sns.head()` | Similar to pandas `head()` method |
-| `sns.distplot(data['factor'])` | Plot a univariate distribution of 'factor' observations |
-| `sns.kdeplot()` | Plot a univariate or bivariate distribution with kernel density estimation | 
-| `sns.rugplot()` | Show small vertical lines to show each observation in a distribution |
-| `sns.jointplot(x, y, data=None)` | Plot two variables with bivariate and univariate graphs |
-| `sns.pairplot()` | Plot pairwise relationships or every possible 2-way comparison in a dataset |
+| `sns.kdeplot(shade=True, rug=True, etc.)` | Plot a one-dimensional or two-dimensional distribution with kernel density estimation |
+| `sns.distplot(kde=True, hist=True)` | Plot a univariate distribution of factor observations. Histograms and KDE can be combined using `displot` |
+| `sns.jointplot(x, y, kind=, etc.)` | Plot two variables with bivariate and univariate graphs |
+| `sns.rugplot(df.x or df.y)` | Show small vertical lines to show each observation in a distribution. Also available in `distplot` |
+| `sns.pairplot(data)` | Plot pairwise relationships or every possible 2-way comparison in a dataset in a matrix |
+| `data = sns.load_dataset('data')` | Load a data set |
 
 ## Categorical Plots
 | Syntax | Description |
