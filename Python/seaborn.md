@@ -59,13 +59,15 @@ g = sns.PairGrid(data)
 | `g.map_lower(sns.kdeplot)` | Plot KDE plots *below* the diagonal |
 | `g.map_upper(plt.scatter)` | Plot a scatter plot *above* the diagonal |
 
-### FacetGrid
+#### FacetGrid
 Kind of like PairGrid but separates the data in multiple plots.
-```
-# Separate the data into multiple plots in separate axes
-g = sns.FacetGrid(data, col='category1', row='category2')
-g.map(sns.distplot, 'factor') # Some factor where category1 and category2 are separated
-g.map(plt.scatter, 'factor1', 'factor2') # Basically like above but added factor2 (or y-axis)
-g = sns.FacetGrid(data, hue="class") # This differenntiates variables by color
-g = g.map(plt.hist,'factor',bins=10,alpha=0.5) # This is most useful in plotting multiple histograms
-```
+
+| Syntax | Description |
+| --- | --- |
+| g = sns.FacetGrid(data, col='category1', row='category2') | Initialize the grid |
+| g = sns.FacetGrid(data, hue="class") | This differenntiates variables by color |
+| g = g.map(plt.hist,'factor',bins=10,alpha=0.5) | Plot a histogram across the grid |
+| g.map(sns.distplot, 'factor') | Some factor where category1 and category2 are separated |
+| g.map(plt.scatter, 'factor1', 'factor2') | Basically like above but added factor2 (or y-axis) |
+
+Fore more, please see Seaborn's documentation.
