@@ -1,4 +1,6 @@
-By convention, we `import maplotlib.plplot as plt` and `seaborn as sns`.
+Matplotlib is a data visualization library built on NumPy arrays.
+
+By convention, we `import maplotlib.pyplot as plt` and `seaborn as sns`.
 
 ## Basic methods
 | Syntax | Description |
