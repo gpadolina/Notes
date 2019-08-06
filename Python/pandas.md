@@ -143,10 +143,14 @@ Notes:
 | `df.reset_index` | Opposite of `set_index` |
 | `df.swaplevel` | Takes two level numbers or names and returns a new object with the level interchanged |
 | `df.sortlevel` | Sorts the data using only the values in a single level |
-| `df.pivot_table` | Create a spreadsheet-style pivot table as a DataFrame |
+| `df.pivot` | Create a pivot table without aggregation. Useful for transforming column data into rows |
+| `df.pivot_table` | Create a spreadsheet-style pivot table as a DataFrame. Can take multiple indices |
 | `df.describe` | Generate descriptive statistics excluding NaN values |
 | `df.info` | Generate a summary of a DataFrame |
 | `df.transpose` | Transpose index and columns |
 | `df.join` | Join columns with other DataFrame either on index or on a key column |
 | `df.head` | Return the top ten rows for each column |
 | `df.concat` | Concatenate pandas objects along a particular axis |
+| `df.stack` | Pivot a level of column labels to rows |
+| `df.unstack` | Pivot a level of row labels to columns |
+| `df.groupby` | Create an object that can be used to split a DataFrame into groups based on a column or row label. Useful for categorical features |
