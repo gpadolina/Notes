@@ -15,7 +15,7 @@ By convention, we `import maplotlib.pyplot as plt` and `seaborn as sns`.
 | `plt.title()` | Make a title for the graph |
 | `plt.subplot()` | Plot multi-plot figure |
 
-## Subplots
+### Subplots
 ```
 # Create plots
 fig, ax = plt.subplots(3)
