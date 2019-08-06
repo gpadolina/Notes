@@ -58,30 +58,30 @@ ax.set_ylim(-5, 5)             # Y-axis limit
 ax,set_title('name here')      # Add a title to the figure
 ax.set_xlabel('name here')     # Add a label to x-axis
 ax.set_ylabel('name here')     # Add a label to y-axis
-```
-
-### Subplots
-```
-fig, axes = plt.subplots(1, 2) # (row by column)
-
-# Manipulating the axes
-axes[0].plot(x, y)
-axes[0].set_xlabel('label')
-axes[0].set_ylabel('label')
-
-axes[1].plot(x, y)
-axes[1].set_xlabel('label')
-axes[1].set_ylabel('label')
-```
-
-### Legend
-```
-fig = plt.figure(figsize=(10, 6))
-ax = fig.add_axes([0, 0, 1, 1])
-
 ax.plot(x, y, label='legend')
-ax.plot(x, x**3, label='legend2')
+ax.plot(x, x**2, label='legend2')
 ax.legend()
+```
+
+### Sample plots
+
+```
+# Scatter plot
+x = np.linspace(0, 5, 20)
+y = np.cos(x)
+plt.plot(x, y, 'o', color='red)
+
+# Scatter plot using plt.scatter()
+plt.scatter(x, y, marker='o')
+
+# Errorbars
+plt.errorbar(x, y, fmt=)
+
+# Contour - 3D
+plt.contour(X, Y, Z, colors=)
+
+# Colorbar
+plt.colorbar()
 ```
 
 ### Upper and lower bounds
