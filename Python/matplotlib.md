@@ -60,13 +60,13 @@ ax.set_xlabel('name here')     # Add a label to x-axis
 ax.set_ylabel('name here')     # Add a label to y-axis
 ax.plot(x, y, label='legend')
 ax.plot(x, x**2, label='legend2')
-ax.legend()
+ax.legend(loc=, frameon=, ncol=, framealpha=, shadow=)
 ```
 
 ### Sample plots
 
 ```
-# *Scatter plot*
+# Scatter plot
 x = np.linspace(0, 5, 20)
 y = np.cos(x)
 plt.plot(x, y, 'o', color='red)
@@ -81,7 +81,14 @@ plt.errorbar(x, y, fmt=)
 plt.contour(X, Y, Z, colors=)
 
 # Colorbar
+# Can be combined with other plots
 plt.colorbar()
+
+# Histograms
+plt.hist(data, bins=, normed=, alpha=, histtype=, color=, edgecolor=)
+
+# Histograms - 2D
+plt.hist2d(x, y, bins=, cmap=)
 ```
 
 ### Upper and lower bounds
