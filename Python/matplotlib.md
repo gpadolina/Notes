@@ -66,7 +66,7 @@ ax.legend()
 ### Sample plots
 
 ```
-# Scatter plot
+# *Scatter plot*
 x = np.linspace(0, 5, 20)
 y = np.cos(x)
 plt.plot(x, y, 'o', color='red)
