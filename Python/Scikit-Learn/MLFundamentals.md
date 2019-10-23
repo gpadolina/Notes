@@ -23,4 +23,6 @@ were not immediately apparent.
   * *Reinforcement learning* - The learning system, called an *agent*, can observe the environment, select and perform actions and get
   *rewards* in return or *penalties* in the form of negative rewards. It must learn by itself what is the best strategy called a *policy*.
 * *Dimensionality Reduction* - Simplify the data without losing too much information by merging several correlated features into one.
-* *Feature Extraction* - The dimensionality reduction algorithm will  merge features into one.
+* *Feature Extraction* - Combining existing features to produce a more useful one.
+* *Feature Selection* - Selecting the most useful features to train on among existing features.
+* *Generalization* - The model's ability to react to new data.
