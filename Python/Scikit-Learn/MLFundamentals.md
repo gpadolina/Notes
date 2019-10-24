@@ -35,5 +35,5 @@ on the training data, but it does not generalize well. If the training error is 
 * *Cross-validation* - The training set is split into complementary subsets, and each model is trained against a different cobination of these subsets and validated against the remaining parts.
 * *Pipeline* - A sequence of data processing components.
 * Performance Measures
- * *RMSE* - Typical performance measure for regression problems is the Root Mean Square Error. It measures the standard deviation of the errors the system makes in its predictions.
- * *MAE* - Another way to measure the distance between two vectors: prediction vector and target values vector.
+  * *RMSE* - Typical performance measure for regression problems is the Root Mean Square Error. It measures the standard deviation of the errors the system makes in its predictions.
+  * *MAE* - Another way to measure the distance between two vectors: prediction vector and target values vector.
